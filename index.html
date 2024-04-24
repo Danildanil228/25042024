@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/images-Photoroom.png-Photoroom.png">
+    <title>RadarFilms</title>
+</head>
+<body>
+    <div class="bg1" id="bg">
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="title-name-modal">
+                    <h1>Login and registration on RadarFIlms</h1>
+                </div>
+                <div>
+                    <form action="/register" method="post">
+                        <div class="login">
+                            <input type="text" name="username" placeholder="Username" required>
+                        </div>
+                        <div class="login">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="login">
+                            <input type="password" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="login">
+                            <button class="login-btn"><span class="login-t">Login or register</span></button>
+                        </div>
+                        <div class="login">
+                            <a href="">Forgot your password</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="content">
+            <div class="container">
+                <header id="header">
+                    <div class="title-name">
+                        <a href=""><h1>Radar Films</h1></a>
+                        <div class="search">
+                            <form action="/search" method="get" class="search-form">
+                                <input type="text" name="search" class="search-box" placeholder="Enter the name of the movie or series..">
+                                <a href=""><img src="img/711319.png" alt=""></a>
+                            </form>
+                        </div>
+                        <div class="login">
+                            <h1><a href="" id="openModal">SignUP or SignIn</a></h1>
+                        </div>
+                        
+                    </div>
+                </header>
+            </div>
+            <main>
+                <div class="container">
+                    
+                    <div class="title-name3">
+                        <h1>RadarFilms Presents new films</h1>
+                        <img src="img/icons8-новинка-100.png" alt="">
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="gallery-container">
+                        <button class="prev-btn" onclick="prevSlide()">&#10096;</button>
+                        <div class="slides">
+                            <img src="img/Films/matrica-4-voskreshenie-cover-art.jpg" alt="">
+                            <img src="img/Films/rpw1ebn7tsoaqtj0kf2s89fe1o3me5l2.jpg.webp" alt="">
+                            <img src="img/Films/scale_1200.jpg" alt="">
+                            <img src="img/Films/vcwk46a3q8nnt44bo84zrz1u1vukoxwz.jpg.webp" alt="">
+                            <img src="img/Films/w2f96dda0rf099vvy7wqnbihyqvl8pxf.jpg.webp" alt="">
+                        </div>
+                        <button class="next-btn" onclick="nextSlide()">&#10097;</button>
+                    </div>
+                </div>
+                
+                
+                <section>
+                    <div class="container">
+                        <div class="title-name3">
+                            <h1>RadarFilms recommends viewing</h1>
+                            <img src="img/icons8-киноэкран-64.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="photos">
+                            <div class="photos1">
+                                <img src="img/photos6/9p595gmb0zq6jtkiafq6oyh2xsc0tufb.webp" alt="">
+                                <img src="img/Films/matrica-4-voskreshenie-cover-art.jpg" alt="">
+                                <img src="img/photos6/film-0.webp" alt="">
+                            </div>
+                            <div class="photos2">
+                                <img src="img/photos6/images (1).jpg" alt="">
+                                <img src="img/photos6/images.jpg" alt="">
+                                <img src="img/photos6/Без названия.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container2">
+                        <div class="title-name3">
+                            <h1>RadarFilms your favorite movies</h1>
+                            <img src="img/icons8-популярная-тема-100.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container2  ">
+                        <div class="hoverimg">
+                            <div class="fotos">
+                                <div style="background-image: url('img/hoverimg/1.jpg');"></div>
+                                <div style="background-image: url('img/hoverimg/2.jpg');"></div>
+                                <div style="background-image: url('img/hoverimg/3.jpeg');"></div>
+                                <div style="background-image: url('img/hoverimg/4.jpg');"></div>
+                                <div style="background-image: url('img/hoverimg/5.jpg');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="container2">
+                    <div class="title-name3">
+                        <h1>RadarFilms on social networks</h1>
+                        <img src="img/icons8-social-networks-24.png" alt="">
+                    </div>
+                </div>
+                <div class="foot">
+                    <div class="we">
+                        <div class="title-name2">
+                            <h1>About Us</h1>
+                        </div>
+                        <div class="links"><a target="_blank" href="https://t.me/xxkinff">Developers</a></div>
+                        <div class="links"><a target="_blank" href="https://t.me/xxkinff">Services</a></div>
+                        <div class="links"><a target="_blank" href="https://t.me/xxkinff">Possibilities</a></div>
+                        <div><a target="_blank" href="https://t.me/xxkinff">Plans</a></div>
+                    </div>
+                    <div class="networks1">
+                        <div class="title-name2">
+                            <h1>Social Network</h1>
+                        </div>
+                        <div class="foot-img">
+                            <div class="f-img">
+                                <a href=""><img src="img/net/icons8-facebook-новый-100.png" alt=""></a>
+                                <a href=""><img src="img/net/icons8-instagram-100.png" alt=""></a>
+                                <a href=""><img src="img/net/icons8-viber-100.png" alt=""></a>
+                            </div>
+                            <div class="f-img">
+                                <a href=""><img src="img/net/icons8-vk-100.png" alt=""></a>
+                                <a href=""><img src="img/net/icons8-whatsapp-100.png" alt=""></a>
+                                <a href=""><img src="img/net/icons8-одноклассники-100.png" alt=""></a>
+                            </div>
+                            <div class="f-img">
+                                <a href=""><img src="img/net/icons8-твиттер-100.png" alt=""></a>
+                                <a href=""><img src="img/net/icons8-телеграм-100.png" alt=""></a>
+                                <a href=""><img src="img/net/icons8-тикток-100.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phones">
+                        <div class="title-name2">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div>
+                            <h1>8 (495) 287-00-00</h1>
+                            <a target="_blank" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%92%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0,+16,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119334/@55.7042902,37.5801069,17z/data=!3m1!4b1!4m6!3m5!1s0x46b54b62f2668a1f:0x94160b7cea0bada1!8m2!3d55.7042872!4d37.5826818!16s%2Fg%2F11crv2bffq?entry=ttu">Moscow, Vavilova street 16</a>
+                        </div>
+                        <div>
+                            <h1>8 (800) 700-50-00</h1>
+                            <a target="_blank" href="">St. Petersburg, Chernikhovskogo street 121</a>
+                        </div>
+                    </div>
+                    <div class="apps">
+                        <div class="title-name2">
+                            <h1>Application</h1>
+                        </div>
+                        <div class="img-app">
+                            <a href=""><img src="img/app/icons8-apple-app-store-100.png" alt=""></a>
+                            <a href=""><img src="img/app/icons8-google-play-100.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+.container{
+    justify-content: center;
+    display: flex;
+}
+p{
+    font-family: "Jersey 10", sans-serif;
+}
+body{
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    transition: top 0.3s;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+a{
+    font-family: "Jersey 10", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-family: "Jersey 10", sans-serif;
+}
+
+.title-name{
+    display: flex;
+    margin-left: 5px;
+}
+
+.title-img img{
+    height: 48px;   
+}
+.search-box{
+    width: 220px;
+    height: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search img{
+    height: 25px;
+    margin-left: 20px;
+}
+.search-form{
+    display: flex;
+}
+.login{
+    display: flex;
+    gap: 20px;
+}
+.title-name {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+.title-name2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.gallery-conrainer{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    transition: transform 0.3s ease;
+}
+.slides:hover{
+    transform: scale(1.05);
+}
+.slides img{
+    width: 600px;
+    height: 700px;
+    cursor: pointer;
+}
+.prev-btn, .next-btn{
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 1;
+}
+
+.prev-btn{
+    left: 500px;
+}
+.next-btn{
+    right: 500px;
+}
+.container2{
+    justify-content: center;
+    display: flex;
+}
+.title-name3{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.title-name3 h1{
+    font-size: 30px;
+}
+.photos1{
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+    justify-content: center;
+}
+.photos2{
+    margin-top: 50px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+}
+.photos{
+    justify-content: center;
+}
+.photos1 img{
+    width: 300px;
+    height: 450px;
+}
+.photos2 img{
+    width: 300px;
+    height: 450px;
+}
+
+.hoverimg{
+    width: 1000px;
+    height: 600px;
+}
+.fotos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.fotos div{
+    height: 100%;
+    width: 20%;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+.fotos div:hover{
+    width: 60%;
+}
+.title-name3{
+    display: flex;
+    align-items: center;
+    
+}
+.title-name3 img{
+    height: 40px;
+    margin-left: 5px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    color: black;
+    gap: 300px;
+}
+.foot a {
+    color: black;
+    font-size: 20px;
+}
+.foot img{
+    height: 40px;
+}
+.f-img{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.img-app img{
+    height: 70px;
+}
+.img-app{
+    display: flex;
+    gap: 20px;
+}
+.links{
+    margin-bottom: 20px;
+}
+.modal-open {
+    overflow: hidden;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 9.4% auto;
+    border: 1px solid #888;
+    width: 700px;
+    padding: 50px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+header .title-img:hover{
+    transform: translateX(-10px)
+}
+.title-name{
+    transition: transform 0.3s ease;
+}
+.title-name:hover{
+    transform: scale(1.05);
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.photos1 img:hover{
+    transform: scale(1.05);
+}
+.photos2 img:hover{
+    transform: scale(1.05);
+}
+.photos img{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.fotos{
+    cursor: pointer;
+}
+.modal-content .title-name-modal{
+    display: flex;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.login input{
+    width: 300px;
+    height: 30px;
+}
+.login-btn{
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    height: 39px;
+    width: 308px;
+}
+.login-t{
+    color: white;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 20px;
+}
+.title-name3{
+    margin-top: 70px;
+}
+.f-img img{
+    transition: transform 0.3s ease;
+}
+.f-img img:hover{
+    transform: scale(1.05);
+}
+.img-app img{
+    transition: transform 0.3s ease;
+}
+.img-app img:hover{
+    transform: scale(1.05);
+}
